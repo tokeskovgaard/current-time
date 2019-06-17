@@ -23,6 +23,9 @@ class ProfileInput implements Partial<Profile> {
   firstName: string;
 
   @Field(type => String)
+  middleName: string;
+
+  @Field(type => String)
   lastName: string;
 }
 

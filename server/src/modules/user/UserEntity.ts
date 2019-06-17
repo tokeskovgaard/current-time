@@ -9,6 +9,10 @@ export class Profile {
   @Field()
   firstName: string;
 
+  @prop({ required: false })
+  @Field()
+  middleName: string;
+
   @prop({ required: true })
   @Field()
   lastName: string;

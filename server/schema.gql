@@ -27,11 +27,13 @@ type Plaid {
 
 type Profile {
   firstName: String!
+  middleName: String!
   lastName: String!
 }
 
 input ProfileInput {
   firstName: String!
+  middleName: String!
   lastName: String!
 }
 
