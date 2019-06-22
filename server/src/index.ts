@@ -1,7 +1,7 @@
 import "reflect-metadata";
-import * as mongoose from "mongoose";
+import mongoose from "mongoose";
 import { ApolloServer, makeExecutableSchema } from "apollo-server-express";
-import * as express from "express";
+import express from "express";
 import { buildSchema } from "type-graphql";
 import { mergeResolvers, mergeTypeDefs, mergeSchemas } from "graphql-toolkit";
 import { PORT, MONGO_HOST, DB_NAME } from "./modules/common/consts";

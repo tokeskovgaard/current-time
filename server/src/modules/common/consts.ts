@@ -1,4 +1,4 @@
-import * as config from "config";
+import config from "config";
 
 export const PORT: number = config.get("PORT");
 export const MONGO_HOST: string = config.get("MONGO_HOST");

@@ -4,19 +4,22 @@
   "description": "Simple Hello World that listens on localhost:8080",
   "main": "server.js",
   "scripts": {
-    "test": "exit 0; run-p test:client test:server",
-    "test:client": "cd client && npm run test:unit",
-    "test:server": "cd server && npm run test",
-    "build": "cd client && npm run build",
     "install:client": "cd client && npm install",
     "install:server": "cd server && npm install",
     "postinstall": "run-p install:*",
-    "serve": "run-p serve:client start:server",
-    "serve:client": "cd client && npm run serve",
+    "build": "run-p build:*",
+    "build:client": "cd client && npm run build",
+    "build:server": "cd server && npm run build",
     "start": "npm run start:server",
-    "start:server": "cd server && npm run start"
+    "start:server": "cd server && npm run start",
+    "test": "exit 0; run-p test:*",
+    "test:client": "cd client && npm run test:unit",
+    "test:server": "cd server && npm run test",
+    "watch": "run-p watch:*",
+    "watch:client": "cd client && npm run watch",
+    "watch:server": "cd server && npm run watch"
   },
-  "devDependencies": {
+  "dependencies": {
     "npm-run-all": "^4.1.5"
   }
 }

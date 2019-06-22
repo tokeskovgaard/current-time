@@ -4,11 +4,14 @@
     "target": "es2016",
     "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "./build",
+    "outDir": "./dist",
     "noFallthroughCasesInSwitch": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
     "allowJs": false,
     "sourceMap": true
-  }
+  },
+  "exclude": ["node_modules"]
 }
