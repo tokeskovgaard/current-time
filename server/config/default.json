@@ -1,7 +1,7 @@
 {
   "PORT": 4000,
-  "DB_NAME": "fullstack",
-  "MONGO_HOST": "",
+  "DB_NAME": "test",
+  "MONGO_HOST": "mongoAdmin:D1g0gM1g1%21@eyetree-sb2yb.mongodb.net",
   "ACCOUNTS_SECRET": "secret",
   "PLAID_CLIENT_ID": "xxxxxxx",
   "PLAID_SECRET": "xxxxxxx",
