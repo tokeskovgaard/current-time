@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var config = require("config");
+exports.PORT = config.get("PORT");
+exports.MONGO_HOST = config.get("MONGO_HOST");
+exports.DB_NAME = config.get("DB_NAME");
+exports.ACCOUNTS_SECRET = config.get("ACCOUNTS_SECRET");
+exports.PLAID_CLIENT_ID = config.get("PLAID_CLIENT_ID");
+exports.PLAID_SECRET = config.get("PLAID_SECRET");
+exports.PLAID_PUBLIC_KEY = config.get("PLAID_PUBLIC_KEY");
+exports.PLAID_PRODUCTS = config.get("PLAID_PRODUCTS");
+exports.PLAID_COUNTRY_CODES = config.get("PLAID_COUNTRY_CODES");
+exports.PLAID_ENV = config.get("PLAID_ENV");
