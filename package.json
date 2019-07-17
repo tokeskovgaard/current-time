@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"no test specified\" && exit 0",
-    "start": "node ./src/server.js",
+    "start": "./dist/server.js",
     "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
     "prod": "tsc && node ./dist/server.js"
   },
