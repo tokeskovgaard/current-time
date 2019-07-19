@@ -1,8 +1,22 @@
 <!doctype html>
-<html>
-	<body>
-			<img border="0" src="https://jenkins-x.io/images/logo.png" width="300" height="300" />
-			<h2>Current time is 16:04 PUBLIC</h2>
+<head>
+    <title></title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+</head>
+<html lang="da">
+<body>
+<div id="app">
+    <img border="0" src="https://jenkins-x.io/images/logo.png" width="300" height="300" alt="k8s image"/>
+    <h2>Current time is</h2>
+    <h3>{{ time }}</h3>
 </div>
-	</body>
+</body>
 </html>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            time: new Date()
+        }
+    })
+</script>
